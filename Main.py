@@ -154,7 +154,7 @@ class StoreDataProcessor:
 class Application(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Data Scraper and Processor")
+        self.title("Web Scraping App")
         self.geometry("400x200")
 
         self.start_date_label = ttk.Label(self, text="Start Date (DD.MM.YYYY):")
@@ -174,5 +174,3 @@ class Application(tk.Tk):
 
         self.browse_button = ttk.Button(self, text="Browse", command=self.browse_directory)
         self.browse_button.pack(pady=5)
-
-        self.scrape_button = ttk.Button(self, text="Scrape and Process
